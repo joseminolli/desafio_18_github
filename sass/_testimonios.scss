@@ -1,0 +1,116 @@
+/* ----------------------------- TESTIMONIOS ----------------------- */
+
+.testimonio {
+
+	display: flex;
+	flex-direction: column;
+
+	@for $colegas from 1 through 3 {
+	.testimonio__colegas__#{$colegas} {width:50%; height: 30%;}  
+	}
+
+
+	@for $pacientes from 1 through 3 {
+		.testimonio__pacientes__#{$pacientes} {width:50%; height: 30%;}  
+	}
+
+	h1 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+
+	&__colegas {
+
+		.testimonio__colegas__1 {
+		background-color: $color-blue;
+		padding: 2em;
+		margin: 1.5em 5em;
+		float: left;
+
+			p {
+				color: $color-white;
+				text-align: center;
+			}
+
+			hr {
+				border: .1px solid $color-white;
+				margin: 1.5em 0em;
+			}
+
+			&__name {
+				padding: 0em;
+				margin: 0.3em;
+			}
+		}
+
+		.testimonio__colegas__2 {
+			@extend .testimonio__colegas__1;
+			float: right;
+
+			&__name {
+				padding: 0em;
+				margin: 0.3em;
+			}
+		}
+
+		.testimonio__colegas__3 {
+			@extend .testimonio__colegas__1;
+
+			&__name {
+				padding: 0em;
+				margin: 0.3em;
+			}
+
+		}	
+
+	}
+
+	.testimonio__pacientes {
+
+		.testimonio__pacientes__1 {
+		background-color: $color-blue;
+		padding: 2em;
+		margin: 2em 5em;
+		float: left;
+
+			p {
+				color: $color-white;
+				text-align: center;
+			}
+
+			hr {
+				border: .1px solid $color-white;
+				margin: 1.5em 0em;
+			}
+
+			&__name {
+				padding: 0em;
+				margin: 0.1em;
+			}
+		}
+
+		.testimonio__pacientes__2 {
+			@extend .testimonio__pacientes__1;
+			float: right;
+
+			&__name {
+				padding: 0em;
+				margin: 0.1em;
+			}
+
+		}
+
+		.testimonio__pacientes__3 {
+			@extend .testimonio__pacientes__1;
+
+			&__name {
+				padding: 0em;
+				margin: 0.1em;
+			}
+
+		}
+
+	}
+}
+

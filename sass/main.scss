@@ -1,0 +1,148 @@
+@import "variables";
+@import "home";
+@import "faq";
+@import "blog";
+@import "terapia";
+@import "testimonios";
+
+
+
+/* ----------------------------- RESET ------------------------------ */
+
+
+* {
+	margin: 0px ;
+	padding: 0px;
+	box-sizing: border-box	
+}
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	background-color: $color-white;
+
+		h1 {
+			font-weight: bold;
+			font-size: 2.5em;
+			text-align: center;
+			color:$color-blue;
+		}
+
+		p {
+			font-family: 'Open Sans', sans-serif;
+			font-style: normal;
+			color:$color-blue;
+
+				strong {
+				font-weight: medium;
+				}
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-white;
+
+				&:hover {
+					font-weight: bold;
+					text-decoration: none;
+				}
+
+				&:visited {
+					color: inherit;
+				}
+		}
+
+}
+
+
+
+
+/* ----------------------------- NAVIGATION ------------------------- */
+
+
+
+.navbar-dark {
+	background-color:#5777AA;
+}
+
+.navbar-brand {
+	margin-left: 4em;
+}
+
+.nav-item {
+	padding-left: 2em;
+	padding-top: .4em;
+}
+
+.navbar-collapse {
+	padding-right: 5em;
+}
+
+
+/* ----------------------------- FOOTER -------------------------- */
+
+.contact {
+	background-color: #39557C;
+	color: white;
+	padding: 2em;
+		
+		h1 {
+			color: $color-white;
+			text-align: left;
+		}
+
+		p {
+			color: $color-white;
+			padding-top: .1em;
+		}
+
+		&__form {
+			padding: 5em;
+			padding-right: 15em;
+
+				.mujer {
+					margin-left: 1.2em;
+				}
+		}
+
+		&__location {
+			padding: 5em;
+		
+				img {
+					padding-bottom: 1.5em;
+				}
+		}
+
+}
+
+
+
+
+
+
+/* ----------------------------- MEDIA QUERIES ----------------------- */
+
+@media (max-width: 576px) {
+
+	.contact {
+
+		&__form {
+			padding: .3em 1.5em;
+			font-size: .9em;
+		}
+
+
+		&__location {
+			padding: .3em 1.5em;
+			padding-top: 1.3em;
+
+				img {
+					width: 100%;
+				}
+		}
+
+	}
+
+}
+

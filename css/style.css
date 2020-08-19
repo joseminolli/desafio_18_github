@@ -1,0 +1,328 @@
+/* ----------------------------- HERO SECTION -------------------- */
+.herosection {
+  height: 55em;
+  background-image: url(media/herosection03.jpg);
+  animation-name: herosection__introduction;
+  /* ----------- animacion ---------- */
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s; }
+  .herosection h1 {
+    display: flex;
+    justify-content: left;
+    margin-top: 7em;
+    text-align: left;
+    padding-left: 2em;
+    color: #FFFFFF;
+    animation-name: herosection__text__introduction;
+    /* ----------- animacion ---------- */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s; }
+  .herosection__cta {
+    display: flex;
+    justify-content: left;
+    margin-top: 2.5em;
+    padding-left: 5em;
+    text-align: left; }
+    .herosection__cta p {
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+      color: #FFFFFF;
+      padding-top: .5em;
+      border-radius: 5px;
+      background-color: #39557C;
+      height: 2.5em;
+      width: 11em;
+      animation-name: herosection__text__introduction;
+      /* ----------- animacion ---------- */
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1.8s;
+      transition: all 0.5s;
+      /* ----------- animacion ---------- */ }
+      .herosection__cta p:hover {
+        background-color: #1A354F;
+        transform: scale(1.1, 1.1); }
+
+@keyframes herosection__introduction {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100; } }
+
+@keyframes herosection__text__introduction {
+  0% {
+    opacity: 0;
+    transform: translate(-40px); }
+  100% {
+    opacity: 100; } }
+
+/* --------------------------- ABOUT ----------------------- */
+.about {
+  padding: 5em;
+  line-height: 2em; }
+  .about h1 {
+    text-align: left; }
+  .about p {
+    padding-top: 3em;
+    padding-right: 8em; }
+  .about img {
+    width: 100%;
+    padding-left: 2em; }
+
+/* ----------------------------- MEDIA QUERIES ----------------------- */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.3em; }
+  p {
+    font-size: .9em; }
+  .navbar-brand {
+    margin: 0em;
+    margin-left: 0em;
+    padding: 0em;
+    padding-left: .5em; }
+  nav .nav-item {
+    padding-left: .5em;
+    padding-top: .3em; }
+  .herosection {
+    height: 37em;
+    background-image: url(media/portada_celular_02.jpg); }
+    .herosection h1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 2.5em;
+      text-align: center;
+      padding: 0em;
+      font-size: 1.5em;
+      color: #7896D2; }
+    .herosection__cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+      text-align: center;
+      padding: 0em; }
+    .herosection p {
+      font-size: 1em; }
+  .about {
+    padding: .5em;
+    margin-top: 2em; }
+    .about h1 {
+      font-size: 1.3em; }
+    .about p {
+      padding-top: 1em;
+      padding-right: 0em;
+      font-size: .9em; }
+    .about img {
+      padding-left: 0em;
+      padding-bottom: 1.5em; } }
+
+/* -------------------------------- ACCORDION ----------------------- */
+#accordion a {
+  color: #7896D2;
+  font-weight: bold; }
+
+/* -------------------------------- CAROUSEL ----------------------- */
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
+/* -------------------------------- TERAPIA ----------------------- */
+.concept {
+  display: inline-block;
+  margin: 2em 2em 2em;
+  padding: 5em; }
+  .concept__text {
+    float: left;
+    width: 40%;
+    min-width: 400px; }
+    .concept__text h1 {
+      text-align: left;
+      margin-top: 0em;
+      margin-bottom: .3em; }
+    .concept__text p {
+      line-height: 2em;
+      padding-top: 1.8em; }
+  .concept__image {
+    display: inline-block;
+    width: 40%;
+    float: right; }
+    .concept__image img {
+      width: 100%; }
+
+.benefits {
+  background-color: #F2F2F2;
+  padding: 5em 0em;
+  text-align: center; }
+  .benefits__description {
+    margin: 3em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .benefits__description div {
+      padding: 2em 4em; }
+    .benefits__description img {
+      height: 13em; }
+    .benefits__description p {
+      padding-top: 1em; }
+
+.modalities {
+  padding: 5em 0em;
+  text-align: center; }
+  .modalities__description {
+    margin: 3em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .modalities__description div {
+      padding: 2em 8em; }
+    .modalities__description img {
+      height: 25em; }
+
+/* ----------------------------- TESTIMONIOS ----------------------- */
+.testimonio {
+  display: flex;
+  flex-direction: column; }
+  .testimonio .testimonio__colegas__1, .testimonio .testimonio__colegas .testimonio__colegas__2, .testimonio__colegas .testimonio .testimonio__colegas__2, .testimonio .testimonio__colegas .testimonio__colegas__3, .testimonio__colegas .testimonio .testimonio__colegas__3 {
+    width: 50%;
+    height: 30%; }
+  .testimonio .testimonio__colegas__2 {
+    width: 50%;
+    height: 30%; }
+  .testimonio .testimonio__colegas__3 {
+    width: 50%;
+    height: 30%; }
+  .testimonio .testimonio__pacientes__1, .testimonio .testimonio__pacientes .testimonio__pacientes__2, .testimonio .testimonio__pacientes .testimonio__pacientes__3 {
+    width: 50%;
+    height: 30%; }
+  .testimonio .testimonio__pacientes__2 {
+    width: 50%;
+    height: 30%; }
+  .testimonio .testimonio__pacientes__3 {
+    width: 50%;
+    height: 30%; }
+  .testimonio h1 {
+    margin-top: 2em;
+    margin-bottom: 1em; }
+  .testimonio__colegas .testimonio__colegas__1, .testimonio__colegas .testimonio__colegas__2, .testimonio__colegas .testimonio__colegas__3 {
+    background-color: #7896D2;
+    padding: 2em;
+    margin: 1.5em 5em;
+    float: left; }
+    .testimonio__colegas .testimonio__colegas__1 p, .testimonio__colegas .testimonio__colegas__2 p, .testimonio__colegas .testimonio__colegas__3 p {
+      color: #FFFFFF;
+      text-align: center; }
+    .testimonio__colegas .testimonio__colegas__1 hr, .testimonio__colegas .testimonio__colegas__2 hr, .testimonio__colegas .testimonio__colegas__3 hr {
+      border: 0.1px solid #FFFFFF;
+      margin: 1.5em 0em; }
+    .testimonio__colegas .testimonio__colegas__1__name {
+      padding: 0em;
+      margin: 0.3em; }
+  .testimonio__colegas .testimonio__colegas__2 {
+    float: right; }
+    .testimonio__colegas .testimonio__colegas__2__name {
+      padding: 0em;
+      margin: 0.3em; }
+  .testimonio__colegas .testimonio__colegas__3__name {
+    padding: 0em;
+    margin: 0.3em; }
+  .testimonio .testimonio__pacientes .testimonio__pacientes__1, .testimonio .testimonio__pacientes .testimonio__pacientes__2, .testimonio .testimonio__pacientes .testimonio__pacientes__3 {
+    background-color: #7896D2;
+    padding: 2em;
+    margin: 2em 5em;
+    float: left; }
+    .testimonio .testimonio__pacientes .testimonio__pacientes__1 p, .testimonio .testimonio__pacientes .testimonio__pacientes__2 p, .testimonio .testimonio__pacientes .testimonio__pacientes__3 p {
+      color: #FFFFFF;
+      text-align: center; }
+    .testimonio .testimonio__pacientes .testimonio__pacientes__1 hr, .testimonio .testimonio__pacientes .testimonio__pacientes__2 hr, .testimonio .testimonio__pacientes .testimonio__pacientes__3 hr {
+      border: 0.1px solid #FFFFFF;
+      margin: 1.5em 0em; }
+    .testimonio .testimonio__pacientes .testimonio__pacientes__1__name {
+      padding: 0em;
+      margin: 0.1em; }
+  .testimonio .testimonio__pacientes .testimonio__pacientes__2 {
+    float: right; }
+    .testimonio .testimonio__pacientes .testimonio__pacientes__2__name {
+      padding: 0em;
+      margin: 0.1em; }
+  .testimonio .testimonio__pacientes .testimonio__pacientes__3__name {
+    padding: 0em;
+    margin: 0.1em; }
+
+/* ----------------------------- RESET ------------------------------ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  background-color: #FFFFFF; }
+  body h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    color: #7896D2; }
+  body p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    color: #7896D2; }
+    body p strong {
+      font-weight: medium; }
+  body a {
+    text-decoration: none;
+    color: #FFFFFF; }
+    body a:hover {
+      font-weight: bold;
+      text-decoration: none; }
+    body a:visited {
+      color: inherit; }
+
+/* ----------------------------- NAVIGATION ------------------------- */
+.navbar-dark {
+  background-color: #5777AA; }
+
+.navbar-brand {
+  margin-left: 4em; }
+
+.nav-item {
+  padding-left: 2em;
+  padding-top: .4em; }
+
+.navbar-collapse {
+  padding-right: 5em; }
+
+/* ----------------------------- FOOTER -------------------------- */
+.contact {
+  background-color: #39557C;
+  color: white;
+  padding: 2em; }
+  .contact h1 {
+    color: #FFFFFF;
+    text-align: left; }
+  .contact p {
+    color: #FFFFFF;
+    padding-top: .1em; }
+  .contact__form {
+    padding: 5em;
+    padding-right: 15em; }
+    .contact__form .mujer {
+      margin-left: 1.2em; }
+  .contact__location {
+    padding: 5em; }
+    .contact__location img {
+      padding-bottom: 1.5em; }
+
+/* ----------------------------- MEDIA QUERIES ----------------------- */
+@media (max-width: 576px) {
+  .contact__form {
+    padding: .3em 1.5em;
+    font-size: .9em; }
+  .contact__location {
+    padding: .3em 1.5em;
+    padding-top: 1.3em; }
+    .contact__location img {
+      width: 100%; } }

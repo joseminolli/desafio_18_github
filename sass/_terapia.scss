@@ -1,0 +1,93 @@
+/* -------------------------------- TERAPIA ----------------------- */
+
+.concept {
+	display: inline-block;
+		margin: 2em 2em 2em;
+		padding: 5em;
+
+			&__text {
+				float: left;
+				width: 40%;
+				min-width: 400px;
+
+					h1 {
+						text-align: left;
+						margin-top: 0em;
+						margin-bottom:.3em;
+					}
+
+					p {
+						line-height: 2em;
+						padding-top: 1.8em;
+					}
+
+			}
+
+		
+			&__image {
+				display: inline-block;
+				width: 40%;
+				float:right;
+
+					img {
+						width: 100%;
+					}
+			}
+}
+
+
+
+.benefits {
+	background-color: #F2F2F2;
+	padding: 5em 0em;
+	text-align: center;
+
+		&__description {
+			margin: 3em;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: center;
+
+				div {
+					padding: 2em 4em;
+				}
+
+				img {
+					height: 13em;
+				}
+
+				p {
+					padding-top: 1em;
+				}
+		}
+
+}
+
+
+.modalities {
+	padding: 5em 0em;
+	text-align: center;
+
+		&__description {
+			margin: 3em;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+
+				div {
+					padding: 2em 8em;
+				}
+
+
+				img {
+					height: 25em;
+				}
+		}
+
+}
+
+
+
+
+

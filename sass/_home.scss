@@ -1,0 +1,182 @@
+
+/* ----------------------------- HERO SECTION -------------------- */
+
+.herosection {
+	height: 55em;
+	background-image: url(media/herosection03.jpg);
+	
+	animation-name: herosection__introduction; /* ----------- animacion ---------- */
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in-out;
+		animation-duration: 1s;
+
+		h1 {
+			display: flex;
+				justify-content: left;
+				margin-top: 7em;
+				text-align: left;
+				padding-left: 2em;
+
+			color: $color-white;	
+
+			animation-name: herosection__text__introduction; /* ----------- animacion ---------- */
+				animation-iteration-count: 1;
+				animation-timing-function: ease-in-out;
+				animation-duration: 1.5s;
+		
+		}
+
+
+		&__cta {
+			display: flex;
+				justify-content: left;
+				margin-top: 2.5em;
+				padding-left: 5em;
+				text-align: left;
+
+					p {
+						font-weight: bold;
+						font-size: 1.2em;
+						text-align: center;
+						color: $color-white;
+						padding-top: .5em;
+
+						border-radius: 5px;
+						background-color: #39557C;
+						height: 2.5em;
+						width: 11em;
+
+						animation-name: herosection__text__introduction; /* ----------- animacion ---------- */
+							animation-iteration-count: 1;
+							animation-timing-function: ease-in-out;
+							animation-duration: 1.8s;
+
+						transition: all 0.5s; /* ----------- animacion ---------- */
+					
+						&:hover {
+							background-color: #1A354F;
+							transform: scale(1.1,1.1); ;
+						}
+
+					} 
+					
+			}
+}
+
+
+@keyframes herosection__introduction {
+	0% {opacity: 0}
+
+	100% {opacity: 100}
+}
+
+
+@keyframes herosection__text__introduction {
+	0% {opacity: 0;
+		transform: translate(-40px);
+		}
+
+	100% {opacity: 100;
+		}
+}
+
+
+/* --------------------------- ABOUT ----------------------- */
+
+.about {
+	padding: 5em;
+	line-height: 2em;
+
+		h1 {
+			text-align: left;
+		}
+
+		p {
+			padding-top: 3em;
+			padding-right: 8em;
+		}
+
+		img {
+			width: 100%;
+			padding-left: 2em;
+		}
+
+}
+
+
+/* ----------------------------- MEDIA QUERIES ----------------------- */
+
+@media (max-width: 576px) {
+
+	h1 {
+		font-size: 1.3em;
+	}
+
+	p {
+		font-size: .9em;
+	}
+
+	.navbar-brand {
+		margin: 0em;
+		margin-left: 0em;
+		padding: 0em;
+		padding-left: .5em;
+	}
+
+	nav .nav-item {
+		padding-left: .5em;
+		padding-top: .3em;
+	}	
+
+
+	.herosection {
+		height: 37em;
+		background-image: url(media/portada_celular_02.jpg);
+
+			h1 {
+					display: flex;
+						justify-content: center;
+						margin-top: 2.5em;
+						text-align: center;
+						padding: 0em;	
+					font-size: 1.5em;
+					color: $color-blue;	
+				}
+
+			&__cta {
+					display: flex;
+						justify-content: center;
+						margin-top: 2em;
+						text-align: center;
+						padding: 0em;
+				}
+
+				p {
+					font-size: 1em;
+				}
+
+	}
+
+	.about {
+		padding: .5em;
+		margin-top: 2em;
+
+			h1 {
+				font-size: 1.3em;
+			}
+			
+			p {
+				padding-top: 1em;
+				padding-right: 0em;
+				font-size: .9em;
+			}
+
+			img {
+				padding-left: 0em;
+				padding-bottom: 1.5em;
+			}
+
+	}
+
+
+}
